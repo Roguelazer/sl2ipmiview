@@ -8,6 +8,11 @@ import Crypto.Cipher.AES
 
 
 def encrypt_password(hostname, password):
+    """IPMIView stores its passwords encrypted with AES-128-CBC using
+    an all-zeros IV and the hostname as the key.
+
+    SO SECURE!"""
+
     iv = b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
     if len(hostname) < 16:
         key = hostname + ('\x00' * (16 - len(hostname)))
