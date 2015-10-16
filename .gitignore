@@ -1,0 +1,9 @@
+*.properties
+*.pyc
+env/
+venv/
+build/
+dist/
+sdist/
+*.egg-info/
+*.egg_info/

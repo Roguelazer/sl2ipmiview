@@ -1,0 +1,1 @@
+Small tool for using the [SoftLayer](http://www.softlayer.com/) [API](https://softlayer-api-python-client.readthedocs.org/en/latest/api/client/) to build an [IPMIView](https://www.supermicro.com/solutions/SMS_IPMI.cfm) configuration file.
